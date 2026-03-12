@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — codeXX.health</title>
+  <meta name="description" content="Privacy Policy for codeXX.health. Learn how we protect your health data with a privacy-first, on-device AI approach.">
+  <meta name="theme-color" content="#FF6E21">
+  <link rel="preload" href="Blenny_Trial_Blk.ttf" as="font" type="font/truetype" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Blenny';
+      src: url('Blenny_Trial_Blk.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --primary: #FF6E21;
+      --primary-warm: #FFB966;
+      --accent-blue: #75CBF6;
+      --accent-green: #8AC926;
+      --bg: #000000;
+      --bg-surface: #1A1A1A;
+      --bg-card: rgba(255,255,255,0.05);
+      --border: rgba(255,255,255,0.1);
+      --border-subtle: rgba(255,255,255,0.06);
+      --text: #FFFFFF;
+      --text-secondary: rgba(255,255,255,0.7);
+      --text-tertiary: rgba(255,255,255,0.45);
+      --font-display: 'Blenny', 'Arial Black', 'Helvetica Neue', sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      --max-width: 800px;
+      --nav-height: 72px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- NAV ---- */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-height);
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, #FF6E21, #FF4500);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--text);
+    }
+    .nav-logo-text em { font-style: normal; color: var(--primary); }
+    .nav-back {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ---- PAGE ---- */
+    .page-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: calc(var(--nav-height) + 60px) 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .page-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .page-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .page-meta {
+      font-size: 14px;
+      color: var(--text-tertiary);
+    }
+
+    /* ---- CONTENT ---- */
+    .legal-content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+      padding-top: 8px;
+    }
+    .legal-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary-warm);
+      margin: 28px 0 8px;
+    }
+    .legal-content p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+    .legal-content ul, .legal-content ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    .legal-content li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      line-height: 1.7;
+    }
+    .legal-content a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .legal-content a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-green);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .highlight-box strong { color: var(--text); }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+    .data-table th {
+      text-align: left;
+      font-weight: 600;
+      color: var(--text);
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+    }
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 24px;
+    }
+    .footer-copy { font-size: 13px; color: var(--text-tertiary); }
+    .footer-legal-links {
+      display: flex; gap: 20px; flex-wrap: wrap;
+    }
+    .footer-legal-links a {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-legal-links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark">
+        <svg width="20" height="14" viewBox="0 0 22 15" fill="white">
+          <path d="M2 7.5C2 4.46 4.46 2 7.5 2C8.88 2 10.14 2.52 11.08 3.38C10.02 4.55 9.38 6.05 9.38 7.5C9.38 8.95 10.02 10.45 11.08 11.62C10.14 12.48 8.88 13 7.5 13C4.46 13 2 10.54 2 7.5Z"/>
+          <path d="M12 7.5C12 4.46 14.46 2 17.5 2C18.88 2 20.14 2.52 21.08 3.38C20.02 4.55 19.38 6.05 19.38 7.5C19.38 8.95 20.02 10.45 21.08 11.62C20.14 12.48 18.88 13 17.5 13C14.46 13 12 10.54 12 7.5Z"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text">code<em>XX</em>.health</span>
+    </a>
+    <a href="/" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="page-wrap">
+  <div class="page-header">
+    <p class="page-eyebrow">Legal</p>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-meta">Last updated: March 12, 2026 &nbsp;·&nbsp; Effective: March 12, 2026</p>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="highlight-box">
+      <p><strong>Your health data stays on your device.</strong> codeXX.health is built privacy-first. Our AI processes your cycle and health data locally on your iPhone — it is never sent to our servers. We collect only the minimum data needed to operate the app and improve the service.</p>
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>codeXX.health ("we", "us", "our") operates the codeXX.health mobile application available on the Apple App Store. This Privacy Policy explains how we collect, use, share, and protect information about you when you use our Service.</p>
+    <p>If you have questions, contact us at <a href="mailto:privacy@codexx.health">privacy@codexx.health</a>.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Information You Provide</h3>
+    <ul>
+      <li><strong>Account data:</strong> email address and password (if you create an account).</li>
+      <li><strong>Profile data:</strong> optional information you enter such as age range, cycle length, and wellness goals.</li>
+      <li><strong>Health &amp; cycle data:</strong> period start/end dates, symptoms, mood, energy levels, nutrition, fitness, and sleep entries you log in the app. This data is stored on-device and, if you enable iCloud sync, in your personal iCloud account.</li>
+    </ul>
+
+    <h3>2.2 Information Collected Automatically</h3>
+    <ul>
+      <li><strong>Usage data:</strong> feature interactions, session duration, and crash reports — used to improve app stability and user experience.</li>
+      <li><strong>Device data:</strong> device model, iOS version, and app version — used for technical support and compatibility.</li>
+    </ul>
+
+    <h3>2.3 Federated Learning (Aggregate AI Improvement)</h3>
+    <p>codeXX.health uses on-device federated learning. Your device may contribute anonymised, mathematically obfuscated model gradients (not raw health data) to improve shared AI models. This process uses differential privacy to ensure no individual's data can be identified or reconstructed. You can opt out of federated learning in the app's Privacy Settings.</p>
+
+    <h2>3. How We Use Your Information</h2>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Purpose</th>
+          <th>Legal Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Provide and personalise the app's features and recommendations</td>
+          <td>Performance of contract / consent</td>
+        </tr>
+        <tr>
+          <td>Authenticate your account and maintain security</td>
+          <td>Performance of contract</td>
+        </tr>
+        <tr>
+          <td>Process subscription payments (via Apple)</td>
+          <td>Performance of contract</td>
+        </tr>
+        <tr>
+          <td>Improve AI models through federated learning</td>
+          <td>Consent (opt-out available)</td>
+        </tr>
+        <tr>
+          <td>Analyse aggregate, anonymised usage trends</td>
+          <td>Legitimate interests</td>
+        </tr>
+        <tr>
+          <td>Send important service notifications and updates</td>
+          <td>Performance of contract / legitimate interests</td>
+        </tr>
+        <tr>
+          <td>Comply with legal obligations</td>
+          <td>Legal obligation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. How We Share Your Information</h2>
+    <p>We do not sell your personal information. We share information only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>Apple / App Store:</strong> Subscription and purchase data is processed by Apple under their own privacy policy.</li>
+      <li><strong>Firebase (Google):</strong> We use Firebase for authentication and, where you enable cloud sync, secure storage of anonymised app data. Google's data processing terms apply.</li>
+      <li><strong>Legal requirements:</strong> We may disclose information if required by law, court order, or governmental authority.</li>
+      <li><strong>Business transfers:</strong> If codeXX.health is acquired or merged, your information may be transferred as part of that transaction with appropriate notice.</li>
+    </ul>
+    <p>We never share raw health data with third-party advertisers or data brokers.</p>
+
+    <h2>5. Data Storage and Security</h2>
+    <p>Your health and cycle data is stored primarily on your device. If you enable cloud backup, data is stored in your personal iCloud account or encrypted Firebase storage, with industry-standard AES-256 encryption in transit and at rest.</p>
+    <p>We implement technical and organisational measures to protect your information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>On-device data is retained until you delete it or uninstall the app. Account data associated with your email is retained as long as your account is active. You may request deletion of your account and associated data at any time by contacting <a href="mailto:privacy@codexx.health">privacy@codexx.health</a>.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> request a copy of the personal data we hold about you.</li>
+      <li><strong>Correction:</strong> request correction of inaccurate data.</li>
+      <li><strong>Deletion:</strong> request deletion of your data ("right to be forgotten").</li>
+      <li><strong>Portability:</strong> receive your data in a structured, machine-readable format.</li>
+      <li><strong>Objection:</strong> object to processing based on legitimate interests.</li>
+      <li><strong>Withdraw consent:</strong> withdraw consent for federated learning at any time in app Settings.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:privacy@codexx.health">privacy@codexx.health</a>. We will respond within 30 days.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>The App is not intended for children under 17 years of age. We do not knowingly collect personal information from children under 17. If you believe we have inadvertently collected such information, please contact us immediately and we will delete it.</p>
+
+    <h2>9. International Transfers</h2>
+    <p>codeXX.health is operated from Germany. If you are located outside the European Union, your information may be transferred to and processed in the EU. We ensure appropriate safeguards (such as Standard Contractual Clauses) are in place for any such transfers.</p>
+
+    <h2>10. Third-Party Links</h2>
+    <p>The App may contain links to third-party websites or services. This Privacy Policy does not apply to those third parties. We encourage you to review their privacy policies.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last Updated" date at the top of this page and, where appropriate, by sending an in-app notification. Your continued use of the App after such changes constitutes acceptance of the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>For privacy questions, requests, or complaints:</p>
+    <ul>
+      <li>Email: <a href="mailto:privacy@codexx.health">privacy@codexx.health</a></li>
+      <li>Website: <a href="https://www.codexx.health">www.codexx.health</a></li>
+    </ul>
+
+    <p>For subscribers in the EU/EEA, you also have the right to lodge a complaint with your local supervisory authority.</p>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 codeXX.health. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="https://www.codexx.health/privacy">Privacy Policy</a>
+        <a href="https://www.codexx.health/terms">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

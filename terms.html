@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — codeXX.health</title>
+  <meta name="description" content="Terms of Use and End User License Agreement for codeXX.health, the AI-powered cycle intelligence app.">
+  <meta name="theme-color" content="#FF6E21">
+  <link rel="preload" href="Blenny_Trial_Blk.ttf" as="font" type="font/truetype" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Blenny';
+      src: url('Blenny_Trial_Blk.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --primary: #FF6E21;
+      --primary-warm: #FFB966;
+      --bg: #000000;
+      --bg-surface: #1A1A1A;
+      --bg-card: rgba(255,255,255,0.05);
+      --border: rgba(255,255,255,0.1);
+      --border-subtle: rgba(255,255,255,0.06);
+      --text: #FFFFFF;
+      --text-secondary: rgba(255,255,255,0.7);
+      --text-tertiary: rgba(255,255,255,0.45);
+      --font-display: 'Blenny', 'Arial Black', 'Helvetica Neue', sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+      --max-width: 800px;
+      --nav-height: 72px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- NAV ---- */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-height);
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, #FF6E21, #FF4500);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 16px;
+      color: var(--text);
+    }
+    .nav-logo-text em { font-style: normal; color: var(--primary); }
+    .nav-back {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* ---- PAGE ---- */
+    .page-wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: calc(var(--nav-height) + 60px) 24px 80px;
+    }
+
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .page-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .page-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .page-meta {
+      font-size: 14px;
+      color: var(--text-tertiary);
+    }
+
+    /* ---- CONTENT ---- */
+    .legal-content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 40px 0 12px;
+      padding-top: 8px;
+    }
+    .legal-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary-warm);
+      margin: 28px 0 8px;
+    }
+    .legal-content p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+    .legal-content ul, .legal-content ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    .legal-content li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      line-height: 1.7;
+    }
+    .legal-content a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .legal-content a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--primary);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .highlight-box strong { color: var(--text); }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 32px;
+    }
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 24px;
+    }
+    .footer-copy { font-size: 13px; color: var(--text-tertiary); }
+    .footer-legal-links {
+      display: flex; gap: 20px; flex-wrap: wrap;
+    }
+    .footer-legal-links a {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-legal-links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark">
+        <svg width="20" height="14" viewBox="0 0 22 15" fill="white">
+          <path d="M2 7.5C2 4.46 4.46 2 7.5 2C8.88 2 10.14 2.52 11.08 3.38C10.02 4.55 9.38 6.05 9.38 7.5C9.38 8.95 10.02 10.45 11.08 11.62C10.14 12.48 8.88 13 7.5 13C4.46 13 2 10.54 2 7.5Z"/>
+          <path d="M12 7.5C12 4.46 14.46 2 17.5 2C18.88 2 20.14 2.52 21.08 3.38C20.02 4.55 19.38 6.05 19.38 7.5C19.38 8.95 20.02 10.45 21.08 11.62C20.14 12.48 18.88 13 17.5 13C14.46 13 12 10.54 12 7.5Z"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text">code<em>XX</em>.health</span>
+    </a>
+    <a href="/" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="page-wrap">
+  <div class="page-header">
+    <p class="page-eyebrow">Legal</p>
+    <h1 class="page-title">Terms of Use</h1>
+    <p class="page-meta">Last updated: March 12, 2026 &nbsp;·&nbsp; Effective: March 12, 2026</p>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="highlight-box">
+      <p><strong>Important:</strong> Please read these Terms of Use carefully before using the codeXX.health app. By downloading, installing, or using the app you agree to be bound by these terms.</p>
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>These Terms of Use ("Terms") constitute a legally binding agreement between you ("User", "you") and codeXX.health ("we", "us", "our"), governing your access to and use of the codeXX.health mobile application (the "App") and any related services (together, the "Service").</p>
+    <p>By downloading, installing, accessing, or using the App you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="https://www.codexx.health/privacy">Privacy Policy</a>, which is incorporated herein by reference. If you do not agree, do not use the App.</p>
+
+    <h2>2. Eligibility</h2>
+    <p>You must be at least 17 years of age to use the App. By using the App you represent and warrant that you meet this requirement and that you have the legal capacity to enter into this agreement.</p>
+
+    <h2>3. License Grant</h2>
+    <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App on Apple-branded devices you own or control, solely for your personal, non-commercial purposes, as permitted by the Apple App Store Terms of Service.</p>
+    <p>This license does not include the right to:</p>
+    <ul>
+      <li>sublicense, sell, resell, transfer, assign, or otherwise commercially exploit the App;</li>
+      <li>modify, translate, adapt, or create derivative works based on the App;</li>
+      <li>reverse-engineer, disassemble, decompile, or otherwise attempt to derive the source code;</li>
+      <li>remove or alter any proprietary notices, labels, or marks on the App.</li>
+    </ul>
+
+    <h2>4. Auto-Renewable Subscriptions</h2>
+    <p>codeXX.health offers auto-renewable in-app subscriptions ("Subscription") that unlock access to codeXX Pro features.</p>
+
+    <h3>4.1 Available Plans</h3>
+    <ul>
+      <li><strong>codeXX Pro — Monthly:</strong> USD 5.99 per month. Billed monthly until cancelled.</li>
+      <li><strong>codeXX Pro — Yearly:</strong> USD 59.99 per year (equivalent to approximately USD 5.00 per month). Billed annually until cancelled.</li>
+    </ul>
+
+    <h3>4.2 Free Trial</h3>
+    <p>Both plans offer a <strong>2-month free trial</strong> for new subscribers. You will not be charged during the trial period. If you do not cancel before the end of the trial period, the Subscription will automatically renew and you will be billed the applicable Subscription price.</p>
+
+    <h3>4.3 Billing and Renewal</h3>
+    <p>Payment is charged to your Apple ID / iTunes account at confirmation of purchase. Your Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the then-current Subscription price. You can manage and cancel your Subscription at any time by going to your App Store Account Settings after purchase.</p>
+
+    <h3>4.4 Price Changes</h3>
+    <p>We reserve the right to change Subscription prices. If a price change affects your Subscription, we will notify you in advance. Continued use of the Service after a price change constitutes your acceptance of the new price.</p>
+
+    <h3>4.5 Cancellation and Refunds</h3>
+    <p>You may cancel your Subscription at any time through your Apple ID Account Settings. Cancellation takes effect at the end of the current billing period — you will retain access to Pro features until then. We do not provide refunds except where required by applicable law. Refund requests for purchases made through the App Store must be directed to Apple.</p>
+
+    <h3>4.6 Apple as Merchant of Record</h3>
+    <p>All Subscription purchases are processed by Apple through the App Store. Apple's standard terms and conditions for in-app purchases apply. codeXX.health is not responsible for App Store billing issues. Contact Apple Support for billing inquiries.</p>
+
+    <h2>5. Not Medical Advice</h2>
+    <p>The App and all content, recommendations, and outputs it provides are for informational and wellness purposes only. The App is not a medical device and does not provide medical advice, diagnosis, or treatment. Nothing in the App should be construed as a substitute for professional medical advice from a qualified healthcare provider. Always seek the advice of a qualified medical professional for any health concerns.</p>
+
+    <h2>6. User Accounts</h2>
+    <p>You may need to create an account to access certain features. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately of any unauthorised use of your account.</p>
+
+    <h2>7. Privacy</h2>
+    <p>Our collection and use of personal information in connection with the Service is described in our <a href="https://www.codexx.health/privacy">Privacy Policy</a>. The App is designed with a privacy-first approach; AI features run on-device and your health data is not uploaded to our servers without your explicit consent.</p>
+
+    <h2>8. Intellectual Property</h2>
+    <p>All content, features, and functionality of the App — including but not limited to text, graphics, logos, icons, images, and software — are owned by codeXX.health or its licensors and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
+
+    <h2>9. Prohibited Conduct</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>use the App for any unlawful purpose or in violation of these Terms;</li>
+      <li>interfere with or disrupt the integrity or performance of the App;</li>
+      <li>attempt to gain unauthorised access to any systems or networks connected to the Service;</li>
+      <li>use the App to collect or harvest any personally identifiable information of other users;</li>
+      <li>use automated means (bots, scrapers, etc.) to access the Service.</li>
+    </ul>
+
+    <h2>10. Termination</h2>
+    <p>We may suspend or terminate your access to the Service at any time, with or without cause, without notice, if we believe you have violated these Terms. Upon termination, your right to use the App ceases immediately. Sections that by their nature should survive termination shall survive, including Sections 5, 8, 12, and 13.</p>
+
+    <h2>11. Updates and Changes</h2>
+    <p>We may update the App and these Terms from time to time. We will notify you of material changes by posting the new Terms in the App or on our website with an updated "Last Updated" date. Your continued use of the App after such changes constitutes your acceptance of the revised Terms.</p>
+
+    <h2>12. Disclaimer of Warranties</h2>
+    <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+
+    <h2>13. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, codeXX.health and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of or inability to use the App, even if advised of the possibility of such damages. Our total aggregate liability shall not exceed the amount you paid for the Service in the 12 months preceding the claim.</p>
+
+    <h2>14. Governing Law</h2>
+    <p>These Terms are governed by and construed in accordance with the laws of the Federal Republic of Germany, without regard to its conflict of law provisions. Any dispute arising from these Terms shall be subject to the exclusive jurisdiction of the competent courts in Germany.</p>
+
+    <h2>15. Apple-Specific Terms</h2>
+    <p>These Terms are between you and codeXX.health only, and not with Apple Inc. Apple is not responsible for the App or its content. In the event of any conflict between these Terms and the App Store Terms of Service, the App Store Terms of Service shall prevail with respect to any rules specifically applicable to App Store usage.</p>
+    <p>Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App. Apple is a third-party beneficiary of these Terms and, upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you.</p>
+
+    <h2>16. Contact Us</h2>
+    <p>If you have any questions about these Terms of Use, please contact us:</p>
+    <ul>
+      <li>Website: <a href="https://www.codexx.health">www.codexx.health</a></li>
+      <li>Email: <a href="mailto:support@codexx.health">support@codexx.health</a></li>
+    </ul>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 codeXX.health. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="https://www.codexx.health/privacy">Privacy Policy</a>
+        <a href="https://www.codexx.health/terms">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
