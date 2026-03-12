@@ -15,6 +15,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="codeXX.health">
   <meta name="twitter:description" content="AI-powered cycle intelligence. Science-backed. Privacy-first.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
   <link rel="preload" href="Blenny_Trial_Blk.ttf" as="font" type="font/truetype" crossorigin>
   <style>
     @font-face {
@@ -183,13 +185,17 @@
     .nav-logo-mark {
       width: 36px;
       height: 36px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
-      border-radius: 10px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: var(--shadow-orange);
       flex-shrink: 0;
+      overflow: hidden;
+    }
+    .nav-logo-mark img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
     }
     .nav-logo-text {
       font-family: var(--font-display);
@@ -1350,11 +1356,17 @@
     }
     .footer-logo-mark {
       width: 32px; height: 32px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
-      border-radius: 9px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .footer-logo-mark img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
     }
     .footer-logo-text { font-family: var(--font-display); font-size: 18px; color: var(--text); }
     .footer-tagline { font-size: 14px; color: var(--text-tertiary); line-height: 1.6; margin-bottom: 20px; }
@@ -1442,10 +1454,7 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">
         <div class="nav-logo-mark">
-          <svg width="22" height="15" viewBox="0 0 22 15" fill="none">
-            <path d="M2 7.5C2 4.46 4.46 2 7.5 2C8.88 2 10.14 2.52 11.08 3.38C10.02 4.55 9.38 6.05 9.38 7.5C9.38 8.95 10.02 10.45 11.08 11.62C10.14 12.48 8.88 13 7.5 13C4.46 13 2 10.54 2 7.5Z" fill="white"/>
-            <path d="M12 7.5C12 4.46 14.46 2 17.5 2C18.88 2 20.14 2.52 21.08 3.38C20.02 4.55 19.38 6.05 19.38 7.5C19.38 8.95 20.02 10.45 21.08 11.62C20.14 12.48 18.88 13 17.5 13C14.46 13 12 10.54 12 7.5Z" fill="white"/>
-          </svg>
+          <img src="logo.png" alt="codeXX.health logo" width="36" height="36">
         </div>
         <span class="nav-logo-text">code<em>XX</em>.health</span>
       </a>
@@ -2271,10 +2280,7 @@
       <div>
         <a href="#" class="footer-logo">
           <div class="footer-logo-mark">
-            <svg width="20" height="14" viewBox="0 0 22 15" fill="white">
-              <path d="M2 7.5C2 4.46 4.46 2 7.5 2C8.88 2 10.14 2.52 11.08 3.38C10.02 4.55 9.38 6.05 9.38 7.5C9.38 8.95 10.02 10.45 11.08 11.62C10.14 12.48 8.88 13 7.5 13C4.46 13 2 10.54 2 7.5Z"/>
-              <path d="M12 7.5C12 4.46 14.46 2 17.5 2C18.88 2 20.14 2.52 21.08 3.38C20.02 4.55 19.38 6.05 19.38 7.5C19.38 8.95 20.02 10.45 21.08 11.62C20.14 12.48 18.88 13 17.5 13C14.46 13 12 10.54 12 7.5Z"/>
-            </svg>
+            <img src="logo.png" alt="codeXX.health logo" width="32" height="32">
           </div>
           <span class="footer-logo-text">codeXX.health</span>
         </a>
